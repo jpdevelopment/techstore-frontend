@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Salidas de build
+dist/
+build/
+.next/
+coverage/
+
+# Variables de entorno (secretos)
+.env
+.env.*
+!.env.example
+
+# Sistema y editores
+.DS_Store
+*.log
+.vscode/
+.idea/
