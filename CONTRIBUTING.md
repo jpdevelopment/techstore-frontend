@@ -6,7 +6,7 @@
 2. Crea una rama desde `main`: `<tipo>/<nº-issue>-<descripción>` (ej. `feat/4-product-card`).
 3. Haz commits pequeños siguiendo Conventional Commits.
 4. Abre un Pull Request hacia `main` y espera a que el CI esté en verde.
-5. Tras la revisión, se integra con *squash merge*.
+5. Tras la revisión, se integra con _squash merge_.
 
 ## Commits (Conventional Commits)
 
@@ -37,3 +37,9 @@ TechStore se reparte en dos repositorios independientes: `techstore-frontend` y
 - [ ] La documentación está actualizada si hacía falta
 - [ ] Si cambia el contrato de la API, el otro repositorio tiene un issue enlazado
 - [ ] Está desplegado en staging y verificado
+
+## Entorno local
+
+Antes de abrir un PR ejecuta `npm run check`. Los hooks de Git comprueban formato,
+lint, tipos y mensajes de commit, pero se pueden saltar con `--no-verify`. La
+comprobación que no se puede saltar es el CI.
