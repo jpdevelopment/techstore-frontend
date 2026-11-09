@@ -1,5 +1,7 @@
 # techstore-frontend
 
+![CI](https://github.com/jpdevelopment/techstore-frontend/actions/workflows/ci.yml/badge.svg)
+
 Frontend de Techstore
 
 Interfaz de TechStore, un catálogo de productos tecnológicos. React + TypeScript (Vite).

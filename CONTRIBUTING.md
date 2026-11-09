@@ -43,3 +43,16 @@ TechStore se reparte en dos repositorios independientes: `techstore-frontend` y
 Antes de abrir un PR ejecuta `npm run check`. Los hooks de Git comprueban formato,
 lint, tipos y mensajes de commit, pero se pueden saltar con `--no-verify`. La
 comprobación que no se puede saltar es el CI.
+
+## Integración continua
+
+Cada PR ejecuta el workflow `CI` (`.github/workflows/ci.yml`): instala dependencias con
+`npm ci`, ejecuta `npm run check` y `npm run build`.
+
+## Reglas de la rama `main`
+
+- No se puede hacer push directo: todo entra por Pull Request.
+- El check `verify` debe estar en verde.
+- La rama del PR debe estar actualizada con `main` antes de fusionar.
+- Solo se permite squash merge y el historial es lineal.
+- No se permite force push ni borrar `main`.
