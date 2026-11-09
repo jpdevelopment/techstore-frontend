@@ -1,20 +1,20 @@
 name: Historia / funcionalidad
 description: Nueva funcionalidad o mejora
-title: "[Feature] "
-labels: ["enhancement"]
+title: '[Feature] '
+labels: ['enhancement']
 body:
-  - type: textarea
-    id: contexto
-    attributes:
-      label: Contexto y objetivo
-      description: ¿Qué problema resuelve y para quién?
-    validations:
-      required: true
-  - type: textarea
-    id: criterios
-    attributes:
-      label: Criterios de aceptación
-      description: Lista verificable de lo que debe cumplirse para dar el ticket por terminado.
-      placeholder: "- [ ] ..."
-    validations:
-      required: true
+    - type: textarea
+      id: contexto
+      attributes:
+          label: Contexto y objetivo
+          description: ¿Qué problema resuelve y para quién?
+      validations:
+          required: true
+    - type: textarea
+      id: criterios
+      attributes:
+          label: Criterios de aceptación
+          description: Lista verificable de lo que debe cumplirse para dar el ticket por terminado.
+          placeholder: '- [ ] ...'
+      validations:
+          required: true
